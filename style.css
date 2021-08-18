@@ -5,13 +5,13 @@
 
 }
 body{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-family: poppins;
 }
 .hero{
     height:90vh;
     width: 100wh;
-    background: url("./img/img.jpg");
+    background: url("./img/coverpage.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
@@ -50,15 +50,7 @@ body{
   }
 
 
-.image img{
-      position: absolute;
-      right: -10%;
-      
-      top: 35%;
-      height: 70%;
-      width: 60%;
-      /* box-shadow: 5px 5px 10px 1px rgb(0, 0, 0); */
-  }
+
   .navbar-text{
       cursor:pointer;
   }
@@ -118,7 +110,7 @@ body{
     border-radius: 50px;
   }
   .parallex{
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     background: url(./img/parallex.jpg);
     background-position: contain;
@@ -166,6 +158,12 @@ body{
 @keyframes animate {
   50% {transform: scale(80%);}
   100% {transform: scale(1.1);}
+}
+.products{
+  display: none;
+}
+#contact{
+  margin-top: 4%;
 }
   .contact .info {
     border-top: 3px solid #47b2e4;
@@ -235,16 +233,13 @@ body{
   color: #ffffffb0;
 }
 
+
+
 @media screen and (max-width: 320px){
   .hero .at-item{
     text-align: center;
     font-weight: 600;
     
-  }
-  .hero .image{
-    /* position: absolute; */
-    /* right: -10%; */
-    display: none;
   }
   .hero{
     height: 40vh;
@@ -252,14 +247,10 @@ body{
   }
   .parallex{
     text-align: center;
-    height: 100vh;
+    height: 150vh;
   }
-  .portfolio-container{
-    margin:20px 0px;
-  }
-  .portfolio-container h1{
-    padding: 10px;
-    border-bottom: 2px solid #0b5fe6;
+  .Services .feature-item{
+    margin-left: auto;
   }
   iframe{
     display: none;
@@ -276,29 +267,30 @@ body{
     font-weight: 600;
     
   }
-  .hero .image{
-    /* position: absolute; */
-    /* right: -10%; */
-    display: none;
-  }
   .hero{
     height: 40vh;
     background-size: cover;
   }
   .parallex{
     text-align: center;
-    height: 80vh;
+    height: 150vh;
   }
   .portfolio-container{
-    margin:20px 0px;
+    display: none;
   }
-  .portfolio-container h1{
+  .products{
+    display: block;
+  }
+  .Services .feature-item{
+    margin-left: 0%;
+  }
+  /* .portfolio-container h1{
     padding: 10px;
     border-bottom: 2px solid #0b5fe6;
-  }
+  } */
   iframe{
-    /* display: none; */
-    width: 50vh;
+    display: none;
+    /* width: 50vh; */
   }
   .email-form{
     display: flex;
@@ -314,11 +306,6 @@ body{
     font-weight: 600;
     
   }
-  .hero .image{
-    /* position: absolute; */
-    /* right: -10%; */
-    display: none;
-  }
   .hero{
     height: 40vh;
     background-size: cover;
@@ -328,14 +315,18 @@ body{
     height: 80vh;
   }
   .portfolio-container{
-    margin:20px 0px;
+    display: none;
   }
-  .portfolio-container h1{
-    padding: 10px;
-    border-bottom: 2px solid #0b5fe6;
+  /* .Services .feature-item{
+    margin-left: 10%;
+  } */
+  .products{
+    display: block;
+    margin-top: 15%;
   }
   iframe{
-    width: 50vh;
+    /* width: 50vh; */
+    display: none;
   }
   .email-form{
     display: flex;
@@ -355,12 +346,19 @@ body{
   }
   .parallex{
     text-align: center;
-    height: 40vh;
+    height: 80vh;
+  }
+  .parallex .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
   }
   .portfolio-container{
     margin:0px 0px;
     margin-left: 15%;
   }
+  
   /* .portfolio-container h1{
     padding-bottom: 10px;
     border-bottom: 2px solid #0b5fe6;
@@ -386,38 +384,15 @@ body{
 
 @media screen and (max-width:605px) and (min-width: 425px){
   .parallex{
-    height: 65vh;
+    height: 70vh;
+  }
+  .feature-item{
+    margin-left: 20%;
+  }
+  .products{
+    display: block;
   }
   .portfolio-container{
-    margin:0px 0px;
-    margin-left: 5%;
-  }
-  
-
-}
-/* @media screen and (max-width: 768px){
-  .hero .at-item{
-    font-weight: 600;
-  }
-  .hero{
-    height: 60vh;
-    background-size: cover;
-  }
-  .hero .image{
-    position: absolute;
-    right: 0%;
-    width: 50%;
-    height: 50%;
-    /* display: none; */
-  /* }
-
-} */
-
-@media screen and (min-width: 769px){
-  .hero .image{
-    left: 0%;
-  }
-  body{
-    background-color: #082758;
+    display: none;
   }
 }
