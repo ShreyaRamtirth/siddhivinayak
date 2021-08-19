@@ -245,9 +245,13 @@ body{
     height: 40vh;
     background-size: cover;
   }
+  .hero h1{
+    font-size: 30px;
+    color: rgb(12, 2, 100);
+  }
   .parallex{
     text-align: center;
-    height: 150vh;
+    height: 100vh;
   }
   .Services .feature-item{
     margin-left: auto;
@@ -261,46 +265,7 @@ body{
 
   }
 }
-@media screen and (max-width: 375px){
-  .hero .at-item{
-    text-align: center;
-    font-weight: 600;
-    
-  }
-  .hero{
-    height: 40vh;
-    background-size: cover;
-  }
-  .parallex{
-    text-align: center;
-    height: 150vh;
-  }
-  .portfolio-container{
-    display: none;
-  }
-  .products{
-    display: block;
-  }
-  .Services .feature-item{
-    margin-left: 0%;
-  }
-  /* .portfolio-container h1{
-    padding: 10px;
-    border-bottom: 2px solid #0b5fe6;
-  } */
-  iframe{
-    display: none;
-    /* width: 50vh; */
-  }
-  .email-form{
-    display: flex;
-    flex-direction: column;
-  }
-  .footer{
-    height: 25vh;
-  }
-}
-@media screen and (max-width: 425px){
+@media screen and (min-width: 321px) and (max-width: 374px){
   .hero .at-item{
     text-align: center;
     font-weight: 600;
@@ -317,15 +282,57 @@ body{
   .portfolio-container{
     display: none;
   }
-  /* .Services .feature-item{
-    margin-left: 10%;
-  } */
+  .products{
+    display: block;
+  }
+  .Services .allservice{
+    margin: auto;
+  }
+
+  iframe{
+    display: none;
+  
+  }
+  .email-form{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer{
+    height: 25vh;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 425px){
+  .hero .at-item{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20%;
+  }
+  .hero{
+    height: 60vh;
+    background-size: cover;
+  }
+  .Services h1{
+    margin-bottom: 20px;
+  }
+   .Services .card{
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .parallex{
+    text-align: center;
+    height: 80vh;
+  }
+  .portfolio-container{
+    display: none;
+  }
+
   .products{
     display: block;
     margin-top: 15%;
   }
   iframe{
-    /* width: 50vh; */
+    
     display: none;
   }
   .email-form{
@@ -336,9 +343,12 @@ body{
     height: 25vh;
   }
 }
-@media screen and (max-width: 768px){
+
+ @media screen and (min-width: 426px) and (max-width: 768px){ 
   .hero .at-item{
     font-weight: 600;
+    font-size: 35px;
+    margin-top: 10%;
   }
   .hero{
     height: 60vh;
@@ -355,17 +365,20 @@ body{
     flex: 1;
   }
   .portfolio-container{
-    margin:0px 0px;
-    margin-left: 15%;
+    margin:auto;
   }
-  
-  /* .portfolio-container h1{
-    padding-bottom: 10px;
-    border-bottom: 2px solid #0b5fe6;
-  } */
+  .Services h1{
+    margin-bottom: 20px;
+  }
+   .Services .card{
+    margin: auto;
+    margin-bottom: 20px;
+  }
+ 
   .portfolio-item{
     align-items: center;
   }
+
   iframe{
     width: 50vh;
   }
@@ -373,26 +386,37 @@ body{
     display: flex;
     flex-direction: column;
   }
-  .footer{
-    height: 25vh;
-  }
   .contactUs{
-    margin-left: 15%;
-
+    margin: auto;
+  }
+  .footer{
+    height: 30vh;
   }
 }
 
-@media screen and (max-width:605px) and (min-width: 425px){
-  .parallex{
-    height: 70vh;
+@media screen and (max-width:1024px) and (min-width: 769px){
+  .hero .at-item{
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    
   }
-  .feature-item{
-    margin-left: 20%;
+  .hero{
+    height: 60vh;
+    background-size: cover;
   }
-  .products{
-    display: block;
+  .hero h1{
+    font-size: 30px;
+    color: rgb(12, 2, 100);
   }
-  .portfolio-container{
-    display: none;
+  .Services h1{
+    margin-bottom: 20px;
+  }
+  .Services .card{
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .contactUs{
+    margin: auto;
   }
 }
